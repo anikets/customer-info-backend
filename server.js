@@ -1,6 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-var morgan = require('morgan');
+const morgan = require('morgan');
+const cors = require('cors');
 const Customer = require("./customer");
 
 const app = express();
@@ -8,6 +9,7 @@ const port = 3004;  // todo read port from env variable for supporting different
 
 app.use(bodyParser.json());
 app.use(morgan('combined'));
+app.use(cors());
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
