@@ -12,5 +12,8 @@ Restore database dumps by using files in seed folder at project root:
 * `mysql -u<username> -p<password> customer < seed/addresses.sql`
 
 Run following commands to start backend:
+* `cd` to project root folder
+* Optional: `nvm install 14.6.0`
+* Optional: `nvm use` (if this and previous commands are not run, please ensure node v14.6.0 is being used)
 * `npm install`
 * `npm start`
